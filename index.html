@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Al Nasr - Umrah Website | irfanqobus</title>
     <link rel="icon" href="images/Title Logo.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -20,7 +21,7 @@
       </div>
 
       <div class="contact-us-btn">
-        <button id="contact-us">Contact Us</button>
+        <button id="contact-us" onclick="callButton();">Contact Us</button>
       </div>
     </nav>
 
@@ -33,7 +34,7 @@
             Al Nasr Travel
           </div>
           <div class="desc">Facilitate your Umrah pilgrimage with us, we already have hundreds of thousands of customers, you can go for Umrah to Mecca and Medina</div>
-          <button id="contact-us">Contact Us</button>
+          <button id="contact-us" onclick="callButton();">Contact Us</button>
         </div>
 
         <div class="right-side-container">
@@ -71,8 +72,8 @@
           </div>
 
           <div class="button-container">
-            <button id="learn-more">Learn More</button>
-            <button id="contact-us">Contact Us</button>
+            <button id="learn-more" onclick="callButton();">Learn More</button>
+            <button id="contact-us" onclick="callButton();">Contact Us</button>
           </div>
         </div>
       </div>
@@ -106,7 +107,7 @@
               </div>
             </div>
 
-            <button>View Detail</button>
+            <button onclick="callButton();">View Detail</button>
           </div>
 
           <!-- Silver Card -->
@@ -129,7 +130,7 @@
               </div>
             </div>
 
-            <button>View Detail</button>
+            <button onclick="callButton();">View Detail</button>
           </div>
 
           <!-- Gold Card -->
@@ -153,7 +154,7 @@
               </div>
             </div>
 
-            <button>View Detail</button>
+            <button onclick="callButton();">View Detail</button>
           </div>
 
           <!-- Diamond Card -->
@@ -176,7 +177,7 @@
               </div>
             </div>
 
-            <button>View Detail</button>
+            <button onclick="callButton();">View Detail</button>
           </div>
 
           <!-- Platinum Card -->
@@ -200,7 +201,7 @@
               </div>
             </div>
 
-            <button>View Detail</button>
+            <button onclick="callButton();">View Detail</button>
           </div>
 
           <div class="card-package comingsoon-card">
@@ -388,13 +389,27 @@
       </div>
       <div class="bottom-side-container">
         <div class="gallery-container1">
-          <img src="images/gallery1.png" alt="" />
+          <a href="images/gallery1.png" data-fancybox="gallery" class="image-link">
+            <img src="images/gallery1.png" alt="Photo1" />
+          </a>
         </div>
+
         <div class="gallery-container2">
-          <img src="images/gallery2.png" alt="" />
-          <img src="images/gallery3.png" alt="" />
-          <img src="images/gallery4.png" alt="" />
-          <img src="images/gallery5.png" alt="" />
+          <a href="images/gallery2.png" data-fancybox="gallery" class="image-link">
+            <img src="images/gallery2.png" alt="Photo2" />
+          </a>
+
+          <a href="images/gallery3.png" data-fancybox="gallery" class="image-link">
+            <img src="images/gallery3.png" alt="Photo3" />
+          </a>
+
+          <a href="images/gallery4.png" data-fancybox="gallery" class="image-link">
+            <img src="images/gallery4.png" alt="Photo4" />
+          </a>
+
+          <a href="images/gallery5.png" data-fancybox="gallery" class="image-link">
+            <img src="images/gallery5.png" alt="Photo5" />
+          </a>
         </div>
 
         <div class="show-all-photos">
@@ -453,6 +468,8 @@
       </div>
     </footer>
 
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

@@ -330,13 +330,18 @@ nav {
 }
 
 .card-package button {
-  display: flex;
+  display: inline-flex;
   padding: 1rem 1.875rem;
   justify-content: center;
   align-items: center;
   border-radius: 0.3125rem;
   border: 1px solid #ffc265;
+
   color: #ffc265;
+  font-family: Nunito;
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 64%; /* 0.48rem */
   background-color: #fff;
 }
 
@@ -706,4 +711,8 @@ footer h2 {
 
 button {
   cursor: pointer;
+}
+
+button:active {
+  filter: brightness(90%);
 }

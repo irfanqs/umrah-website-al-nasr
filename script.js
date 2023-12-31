@@ -10,17 +10,14 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
       behavior: "smooth",
     });
 
-    // Hapus kelas "active" dari semua elemen navbar
     document.querySelectorAll(".navbar a").forEach((link) => {
       link.classList.remove("active");
     });
 
-    // Tambahkan kelas "active" pada elemen yang sesuai dengan section yang ditampilkan
     this.classList.add("active");
   });
 });
 
-// Tambahkan event listener untuk menangani scroll dan menetapkan kelas "active" pada navbar
 window.addEventListener("scroll", () => {
   const scrollPosition = window.scrollY;
 
@@ -37,4 +34,12 @@ window.addEventListener("scroll", () => {
       link.classList.remove("active");
     }
   });
+});
+
+function callButton() {
+  alert("Normally this button works! But unfortunately this website is just a prototype and not a real website :(");
+}
+
+$(document).ready(function () {
+  $('[data-fancybox="gallery"]').fancybox({});
 });
